@@ -14,6 +14,16 @@ public class Auteur {
     private String firstName;
     private String lastName;
 
+    private String testAttribute;
+
+    public String getTestAttribute() {
+        return testAttribute;
+    }
+
+    public void setTestAttribute(String testAttribute) {
+        this.testAttribute = testAttribute;
+    }
+
     @ManyToMany(mappedBy = "auteurs")
     private Set<Book> books = new HashSet<>();
 
