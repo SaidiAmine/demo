@@ -33,6 +33,11 @@ public class Auteur {
         this.books = books;
     }
 
+    public Auteur(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
     public Long getId() {
         return id;
     }
